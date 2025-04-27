@@ -33,6 +33,8 @@ dependencies:
   shared_preferences: ^2.5.2
 
   # Other
+  flutter_svg: ^2.0.17
+  vector_graphics: ^1.1.9
   either_dart: ^1.0.0
   cupertino_icons: ^1.0.8
   equatable: ^2.0.7
@@ -66,16 +68,6 @@ dev_dependencies:
   json_serializable: ^6.9.4
   injectable_generator: ^2.7.0
 
-dependency_overrides:
-  # meta: ^1.16.0
-  # web: ^1.1.0
-  archive: ^3.0.0
-  # url_launcher_ios:
-  #   git:
-  #     url: https://github.com/flutter/packages.git
-  #     ref: main
-  #     path: packages/url_launcher/url_launcher_ios
-
 flutter:
   uses-material-design: true
 
@@ -99,13 +91,13 @@ flutter:
           weight: 800
     - family: TiemposHeadline
       fonts:
-        - asset: assets/fonts/TiemposHeadline-Regular.ttf
+        - asset: assets/fonts/TiemposHeadline-Regular.otf
           weight: 400
-        - asset: assets/fonts/TiemposHeadline-Medium.ttf
+        - asset: assets/fonts/TiemposHeadline-Medium.otf
           weight: 500
-        - asset: assets/fonts/TiemposHeadline-SemiBold.ttf
+        - asset: assets/fonts/TiemposHeadline-SemiBold.otf
           weight: 600
-        - asset: assets/fonts/TiemposHeadline-Bold.ttf
+        - asset: assets/fonts/TiemposHeadline-Bold.otf
           weight: 700
         
 flutter_gen:
@@ -117,11 +109,11 @@ flutter_gen:
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#1a1a1a"
-  image: assets/images/im_logo.png
+  image: assets/images/splash.png
 
 flutter_launcher_icons:
-  image_path: "assets/images/logo.png"
-  android: "im_logo"
+  image_path: "assets/images/splash.png"
+  android: "splash"
   # adaptive_icon_background: "#4f75fb"
   ios: true
   remove_alpha_ios: true
