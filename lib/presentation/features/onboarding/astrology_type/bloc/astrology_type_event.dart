@@ -4,4 +4,4 @@ part of 'astrology_type_bloc.dart';
 class AstrologyTypeEvent with _$AstrologyTypeEvent {
   const factory AstrologyTypeEvent.dontKnow() = _DontKnow;
   const factory AstrologyTypeEvent.next() = _Next;
-} 
+}

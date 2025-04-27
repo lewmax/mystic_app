@@ -8,8 +8,13 @@ class AppButton extends StatelessWidget {
   final double borderRadius;
   final VoidCallback? onTap;
 
-  const AppButton(
-      {super.key, required this.title, this.onTap, this.color = AppColors.blueGrey, this.borderRadius = 100});
+  const AppButton({
+    super.key,
+    required this.title,
+    this.onTap,
+    this.color = AppColors.blueGrey,
+    this.borderRadius = 100,
+  });
 
   @override
   Widget build(BuildContext context) {

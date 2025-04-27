@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
@@ -32,7 +30,7 @@ class PlaceInputBloc extends Bloc<PlaceInputEvent, PlaceInputState> {
 
   Future<void> _onNext(_Next event, Emitter<PlaceInputState> emit) async {
     emit(const PlaceInputState.loading(false));
-    final res = await Future.delayed(const Duration(seconds: 1), () => Random().nextBool());
+    final res = await Future.delayed(const Duration(seconds: 1), () => true);
 
     final isValid = place.isNotEmpty || isDontKnow;
     emit(res ? PlaceInputState.success(isValid) : PlaceInputState.error(isValid, 'Error happened'));

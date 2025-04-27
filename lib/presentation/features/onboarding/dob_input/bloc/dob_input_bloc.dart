@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
@@ -49,7 +47,7 @@ class DOBInputBloc extends Bloc<DOBInputEvent, DOBInputState> {
         isButtonEnabled: false,
       ),
     );
-    final res = await Future.delayed(const Duration(seconds: 1), () => Random().nextBool());
+    final res = await Future.delayed(const Duration(seconds: 1), () => true);
 
     emit(
       res

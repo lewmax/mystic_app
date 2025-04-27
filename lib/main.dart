@@ -14,7 +14,7 @@ void main() async {
   Bloc.observer = const AppBlocObserver();
 
   const environment =
-      String.fromEnvironment("environment", defaultValue: "dev");
+      String.fromEnvironment('environment', defaultValue: 'dev');
   await configureDependencies(environment);
 
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);

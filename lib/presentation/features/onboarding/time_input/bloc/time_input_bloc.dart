@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
@@ -34,7 +31,7 @@ class TimeInputBloc extends Bloc<TimeInputEvent, TimeInputState> {
   Future<void> _onNext(_Next event, Emitter<TimeInputState> emit) async {
     emit(TimeInputState.loading(isTimeValid: true, hour: state.hour, minute: state.minute, period: state.period));
 
-    final res = await Future.delayed(const Duration(seconds: 1), () => Random().nextBool());
+    final res = await Future.delayed(const Duration(seconds: 1), () => true);
 
     if (res) {
       emit(TimeInputState.success(isTimeValid: true, hour: state.hour, minute: state.minute, period: state.period));

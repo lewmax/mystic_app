@@ -25,8 +25,7 @@ mixin SnackBarPresenter {
             duration: durration,
             behavior: SnackBarBehavior.floating,
             backgroundColor: isError ? AppColors.red : AppColors.black,
-            margin: EdgeInsets.only(
-                bottom: height, left: sidePadding, right: sidePadding),
+            margin: EdgeInsets.only(bottom: height, left: sidePadding, right: sidePadding),
           ),
         )
         .closed
@@ -54,8 +53,7 @@ mixin SnackBarPresenter {
             duration: durration,
             behavior: SnackBarBehavior.floating,
             backgroundColor: bgColor,
-            margin: EdgeInsets.only(
-                bottom: height, left: sidePadding, right: sidePadding),
+            margin: EdgeInsets.only(bottom: height, left: sidePadding, right: sidePadding),
           ),
         )
         .closed

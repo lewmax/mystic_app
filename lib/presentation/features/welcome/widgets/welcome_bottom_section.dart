@@ -30,13 +30,13 @@ class WelcomeBottomSection extends StatelessWidget {
           ),
           SizedBox(height: 18.pt),
           Text(
-            "Discover yourself\nThrough the Stars",
+            'Discover yourself\nThrough the Stars',
             textAlign: TextAlign.center,
             style: tiemposHeadline32.copyWith(color: AppColors.black2, height: 1.0, letterSpacing: -0.32),
           ),
           SizedBox(height: 8.pt),
           Text(
-            "Explore self-awareness through\nastrology. Navigate life with clarity.",
+            'Explore self-awareness through\nastrology. Navigate life with clarity.',
             textAlign: TextAlign.center,
             style: inter16.copyWith(color: AppColors.grey2, height: 1.5, letterSpacing: -0.16),
           ),

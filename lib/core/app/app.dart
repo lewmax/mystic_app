@@ -34,6 +34,7 @@ class App extends StatelessWidget {
           final mediaQuery = MediaQuery.of(context);
           // ignore: deprecated_member_use
           final limitedTextScaleFactor =
+              // ignore: deprecated_member_use
               math.min(mediaQuery.textScaleFactor, _maxTextScaleFactor);
 
           return MediaQuery(

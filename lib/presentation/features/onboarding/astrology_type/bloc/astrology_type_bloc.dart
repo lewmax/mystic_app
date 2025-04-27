@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
@@ -28,8 +26,8 @@ class AstrologyTypeBloc extends Bloc<AstrologyTypeEvent, AstrologyTypeState> {
 
   Future<void> _onNext(_Next event, Emitter<AstrologyTypeState> emit) async {
     emit(const AstrologyTypeState.loading(true));
-    final res = await Future.delayed(const Duration(seconds: 1), () => Random().nextBool());
+    final res = await Future.delayed(const Duration(seconds: 1), () => true);
 
     emit(res ? const AstrologyTypeState.success(true) : const AstrologyTypeState.error(true, 'Error happened'));
   }
-} 
+}
